@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2dc8412516.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <!-- background image -->
+    <div class="weatherImgs">
+      <img class="weatherImg" alt="" />
+    </div>
+
+    <div class="container">
+      <!-- searchhh -->
+      <div class="searchPar">
+        <input
+          type="text"
+          class="searchInp"
+          name=""
+          id=""
+          placeholder="search city"
+        />
+        <button class="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <!-- ///// -->
+
+      <!-- weatcher container -->
+      <div class="weatcherCont">
+        <div class="succesDiv">
+          <!-- current location -->
+          <div class="curentLocationCont infoCont">
+            <span>Current Location</span>
+            <span class="locationName"></span>
+            <!-- //// -->
+          </div>
+
+          <!-- temperature -->
+          <div class="temperatureCont infoCont">
+            <span>temperature</span>
+            <span class="temperature"></span>
+          </div>
+          <!-- //// -->
+
+          <!-- weather  -->
+          <div class="weatherCont infoCont">
+            <span>weather</span>
+            <span class="weather"></span>
+          </div>
+        </div>
+
+        <div class="errordiv"></div>
+      </div>
+      <!-- ///// -->
+    </div>
+
+    <script src="./javascript/index.js"></script>
+  </body>
+</html>

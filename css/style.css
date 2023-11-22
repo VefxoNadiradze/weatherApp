@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1b9ae3;
+}
+
+.weatherImgs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+.weatherImg {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  display: none;
+}
+
+.weatherImgs > div img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 7px;
+  width: 27%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.367);
+  border-radius: 15px;
+  z-index: 100;
+}
+
+.searchPar {
+  position: relative;
+  width: 100%;
+  height: 45px;
+}
+
+.searchPar > input {
+  width: 100%;
+  height: 100%;
+  padding: 5px 8px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+}
+.searchPar > input::placeholder {
+  font-size: 15px;
+  color: white;
+}
+.searchPar > button {
+  position: absolute;
+  right: 0px;
+  padding: 0 15px;
+  height: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: white;
+  transition: 0.3s ease;
+}
+.searchPar > button:hover {
+  transform: scale(0.8);
+}
+
+.container .weatcherCont {
+  position: relative;
+  color: white;
+  width: 100%;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.5s ease;
+  height: 0px;
+}
+
+.weatcherCont .curentLocationCont {
+  transform: translateY(-55px);
+  transition: 1.5s ease;
+}
+
+.weatcherCont .temperatureCont {
+  transform: translateY(-55px);
+  transition: 1.3s ease;
+}
+
+.weatcherCont .weatherCont {
+  transform: translateY(-55px);
+  transition: 1.1s ease;
+}
+
+.weatcherCont .infoContActive {
+  transform: translateY(0px);
+}
+
+.succesDiv > div {
+  margin: 14px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.errordiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  display: none;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1185px) {
+  .container {
+    width: 37%;
+  }
+}
+
+@media only screen and (max-width: 792px) {
+  .container {
+    width: 53%;
+  }
+}
+
+@media only screen and (max-width: 533px) {
+  .container {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 433px) {
+  .container {
+    width: 92%;
+  }
+}
